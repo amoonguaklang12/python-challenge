@@ -1,7 +1,7 @@
 import csv
 
 # define the file path
-path = "PyPoll/Resources/election_data.csv"
+path = r"C:\Users\ander\databootcamp\HW 3\python-challenge\PyPoll\Resources\election_data.csv"
 
 # Variables for calculations
 total_votes = 0
@@ -53,7 +53,7 @@ print(f"Winner: {winner}")
 print("--" * 14)
 
 # Writes to an analysis.txt file
-output_path = "PyPoll/Analysis/analysis.txt"
+output_path = r"C:\Users\ander\databootcamp\HW 3\python-challenge\PyPoll\Analysis\analysis.txt"
 with open(output_path, 'w') as analysis:
     analysis.write("Election Results")
     analysis.write("\n" + "--" * 14)

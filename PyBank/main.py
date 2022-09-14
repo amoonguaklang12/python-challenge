@@ -1,9 +1,7 @@
-
-from cgitb import text
 import csv
 
 # define the file path
-path = "PyBank/Resources/budget_data.csv"
+path = r"C:\Users\ander\databootcamp\HW 3\python-challenge\PyBank\Resources\budget_data.csv"
 
 # Variables for calculations
 total_months = 0
@@ -53,7 +51,7 @@ print("Average Change: $", round(total_profit_change/counter, 2))
 print(f"Greatest Increase in Profits: {max_index} (${max_profit})")
 print(f"Greatest Decrease in Profits: {min_index} (${min_profit})")
     
-output_path = "PyBank/Analysis/analysis.txt"
+output_path = r"C:\Users\ander\databootcamp\HW 3\python-challenge\PyBank\Analysis\analysis.txt"
 with open(output_path, 'w') as analysis:
     analysis.write("Financial Analysis")
     analysis.write("\n" + "--" * 14)
